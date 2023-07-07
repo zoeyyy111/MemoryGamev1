@@ -2,6 +2,7 @@ package com.memorygame.draft;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
@@ -45,6 +46,10 @@ public class DownloadPictures extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_download_pictures);
+
+        Intent intent = new Intent("CHANGE_MUSIC_ACTION");
+        intent.putExtra("music_resource", R.raw.game_background_7_filuanddina);
+        sendBroadcast(intent);
 
         progressBar = findViewById(R.id.progressBar);
         tableLayout = findViewById(R.id.imageButtonContainer);
@@ -163,5 +168,13 @@ public class DownloadPictures extends AppCompatActivity {
 
             index++;
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent("CHANGE_MUSIC_ACTION");
+        intent.putExtra("music_resource", R.raw.funny_tunes_filu_and_dina);
+        sendBroadcast(intent);
+        super.onBackPressed();
     }
 }
