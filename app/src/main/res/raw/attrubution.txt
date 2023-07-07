@@ -1,0 +1,16 @@
+Attrubution：
+
+Music:
+
+BuleJay Studio
+https://www.jamendo.com/track/1748062/game-background-7
+
+
+SoundEffects:
+Powerdown:
+	JustInvoke
+	https://freesound.org/people/JustInvoke/sounds/138488/
+
+Electro win sound:
+	Unlistenable
+	https://freesound.org/people/Unlistenable/sounds/391539/
