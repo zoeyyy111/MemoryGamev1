@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, DownloadPictures.class);
-
                 startActivity(intent);
             }
         });
@@ -34,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
         startDownload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, GameActivity.class);
+                startActivity(intent);
 
             }
         });
